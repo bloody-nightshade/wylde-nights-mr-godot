@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="ModManifest" load_steps=2 format=3 uid="uid://scll6g15hww4"]
+
+[ext_resource type="Script" uid="uid://ormh4tpr6y5n" path="res://shared/mod_manifest.gd" id="1_05a62"]
+
+[resource]
+script = ExtResource("1_05a62")
+mod_id = "mr_godot"
+author = "Nightshade"
+version = "1.0"
+mod_name = "Mr. Godot"
+description = "Mr. Godot the upstanding example mod."
+metadata/_custom_type_script = "uid://ormh4tpr6y5n"

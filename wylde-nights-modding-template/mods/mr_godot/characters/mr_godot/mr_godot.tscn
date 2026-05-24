@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cdshq1bvqa07b"]
+
+[ext_resource type="Script" uid="uid://cx5t3hkc4ipse" path="res://mods/mr_godot/characters/mr_godot/mr_godot.gd" id="1_n0477"]
+
+[node name="MrGodot" type="Node"]
+script = ExtResource("1_n0477")
+path = Array[int]([3, 4, 2, 8])
+metadata/_custom_type_script = "uid://cx5t3hkc4ipse"

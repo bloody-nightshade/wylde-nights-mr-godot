@@ -10,11 +10,17 @@ config_version=5
 
 [application]
 
-config/name="Wylde Nights Modding Template"
+config/name="Mr. Godot"
 config/version="1"
 config/tags=PackedStringArray("wylde_nights")
 config/features=PackedStringArray("4.4", "Forward Plus")
-config/icon="res://mods/characters/template_character/sprites/icon.svg"
+config/icon="uid://dqrrsnd0ciccf"
+
+[file_customization]
+
+folder_colors={
+"res://mods/": "red"
+}
 
 [rendering]
 

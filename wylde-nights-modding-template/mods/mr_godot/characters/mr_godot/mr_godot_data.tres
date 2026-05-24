@@ -1,0 +1,111 @@
+[gd_resource type="Resource" script_class="CharacterData" load_steps=27 format=3 uid="uid://ccv6f06rhtxb8"]
+
+[ext_resource type="Script" uid="uid://brll4euwimdx3" path="res://gamemodes/office_night_watch/characters/data/appearances.gd" id="1_wlnyx"]
+[ext_resource type="Script" uid="uid://ciq4n4hy0k0fy" path="res://gamemodes/office_night_watch/characters/data/character_appearance.gd" id="2_0a74q"]
+[ext_resource type="Script" uid="uid://iwkmydanqtyp" path="res://gamemodes/office_night_watch/characters/data/sprite_appearance.gd" id="3_454bq"]
+[ext_resource type="SpriteFrames" uid="uid://cudhsdef40rom" path="res://mods/mr_godot/characters/mr_godot/sprites/jumpscare.tres" id="3_kpmyq"]
+[ext_resource type="Texture2D" uid="uid://bpmdeq254ydd2" path="res://mods/mr_godot/characters/mr_godot/sprites/Cam_3.png" id="4_5ogjp"]
+[ext_resource type="Texture2D" uid="uid://mn8sd2pv6evw" path="res://mods/mr_godot/characters/mr_godot/sprites/Cam_4.png" id="5_l7s0k"]
+[ext_resource type="Script" uid="uid://bin218a63anxu" path="res://gamemodes/office_night_watch/characters/data/character_data.gd" id="5_s1566"]
+[ext_resource type="Texture2D" uid="uid://dqugvtc4ajylb" path="res://mods/mr_godot/characters/mr_godot/sprites/Cam_5.png" id="6_fut8k"]
+[ext_resource type="Texture2D" uid="uid://cx4a45m7c6c0x" path="res://mods/mr_godot/characters/mr_godot/sprites/Cam_8.png" id="7_r5hef"]
+[ext_resource type="Texture2D" uid="uid://mf4bt5vef7ex" path="res://mods/mr_godot/characters/mr_godot/sprites/Cam_3_Close.png" id="8_ef1ur"]
+[ext_resource type="Texture2D" uid="uid://roj18lmbo1ai" path="res://mods/mr_godot/characters/mr_godot/sprites/Cam_8_Close.png" id="9_luav8"]
+[ext_resource type="Texture2D" uid="uid://c0dbr46mxwpi6" path="res://mods/mr_godot/characters/mr_godot/sprites/icon.svg" id="10_l7s0k"]
+[ext_resource type="PackedScene" uid="uid://cdshq1bvqa07b" path="res://mods/mr_godot/characters/mr_godot/mr_godot.tscn" id="11_5ogjp"]
+
+[sub_resource type="Resource" id="Resource_6hsc2"]
+script = ExtResource("3_454bq")
+texture = ExtResource("4_5ogjp")
+metadata/_custom_type_script = "uid://iwkmydanqtyp"
+
+[sub_resource type="Resource" id="Resource_ll8ug"]
+script = ExtResource("1_wlnyx")
+appearances = Dictionary[String, ExtResource("2_0a74q")]({
+"idle": SubResource("Resource_6hsc2")
+})
+
+[sub_resource type="Resource" id="Resource_uhotj"]
+script = ExtResource("3_454bq")
+texture = ExtResource("5_l7s0k")
+metadata/_custom_type_script = "uid://iwkmydanqtyp"
+
+[sub_resource type="Resource" id="Resource_1vn4h"]
+script = ExtResource("1_wlnyx")
+appearances = Dictionary[String, ExtResource("2_0a74q")]({
+"idle": SubResource("Resource_uhotj")
+})
+
+[sub_resource type="Resource" id="Resource_2ws6d"]
+script = ExtResource("3_454bq")
+texture = ExtResource("6_fut8k")
+metadata/_custom_type_script = "uid://iwkmydanqtyp"
+
+[sub_resource type="Resource" id="Resource_uuv8q"]
+script = ExtResource("1_wlnyx")
+appearances = Dictionary[String, ExtResource("2_0a74q")]({
+"idle": SubResource("Resource_2ws6d")
+})
+
+[sub_resource type="Resource" id="Resource_is4cx"]
+script = ExtResource("3_454bq")
+texture = ExtResource("7_r5hef")
+metadata/_custom_type_script = "uid://iwkmydanqtyp"
+
+[sub_resource type="Resource" id="Resource_8ei8y"]
+script = ExtResource("1_wlnyx")
+appearances = Dictionary[String, ExtResource("2_0a74q")]({
+"idle": SubResource("Resource_is4cx")
+})
+
+[sub_resource type="Resource" id="Resource_5fxx8"]
+script = ExtResource("3_454bq")
+texture = ExtResource("8_ef1ur")
+metadata/_custom_type_script = "uid://iwkmydanqtyp"
+
+[sub_resource type="Resource" id="Resource_kwso4"]
+script = ExtResource("1_wlnyx")
+appearances = Dictionary[String, ExtResource("2_0a74q")]({
+"idle": SubResource("Resource_5fxx8")
+})
+
+[sub_resource type="Resource" id="Resource_2w6so"]
+script = ExtResource("3_454bq")
+texture = ExtResource("9_luav8")
+metadata/_custom_type_script = "uid://iwkmydanqtyp"
+
+[sub_resource type="Resource" id="Resource_ysoa2"]
+script = ExtResource("1_wlnyx")
+appearances = Dictionary[String, ExtResource("2_0a74q")]({
+"idle": SubResource("Resource_2w6so")
+})
+
+[sub_resource type="Resource" id="Resource_fut8k"]
+script = ExtResource("3_454bq")
+texture = ExtResource("10_l7s0k")
+metadata/_custom_type_script = "uid://iwkmydanqtyp"
+
+[resource]
+script = ExtResource("5_s1566")
+character_id = "nightshade:mr_godot"
+character_display_name = "Mr. Godot"
+author = "Nightshade"
+default_difficulties = Array[int]([1, 2, 4, 8, 16])
+scene = ExtResource("11_5ogjp")
+camera_appearances = Dictionary[int, ExtResource("1_wlnyx")]({
+2: SubResource("Resource_ll8ug"),
+3: SubResource("Resource_1vn4h"),
+4: SubResource("Resource_uuv8q"),
+7: SubResource("Resource_8ei8y"),
+8: SubResource("Resource_kwso4"),
+9: SubResource("Resource_ysoa2")
+})
+office_appearances = Dictionary[int, ExtResource("1_wlnyx")]({})
+jumpscare_animation = ExtResource("3_kpmyq")
+extras_portrait = ExtResource("10_l7s0k")
+extras_description = "Mr. Godot is the example mod for Wylde Nights
+
+I'm not sure what made me think of using Mr. Godot over literally anything else, I think the idea of just seeing a \"fancy\" Godot the Robot seemed funny?"
+death_screen_sprite = SubResource("Resource_fut8k")
+death_screen_hints = Array[String](["Mr. Godot can move into Cam 3 or Cam 8, be sure to check both before he gets you."])
+metadata/_custom_type_script = "uid://bin218a63anxu"
